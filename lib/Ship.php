@@ -5,13 +5,26 @@ class Ship
     private $weaponPower = 0;
     private $jediFactor = 0;
     private $strength = 0;
+    private $underRepair;
+    
+    public function __construct($name)
+    {   
+        $this->name = $name;
+        // randomly put this ship under repair
+        $this->underRepair = mt_rand(1,100) < 30;
+        //echo 'Automatically called!';
+    }
+    public function isFunctional()
+    {
+        return !$this->underRepair;
+    }
     public function sayHello()
     {
         echo 'Hello!';
     }
     public function getName()
     {
-        return $this->name;
+        return strtoupper($this->name);
     }
     public function setStrength($number)
     {   

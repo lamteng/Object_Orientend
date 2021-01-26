@@ -65,6 +65,9 @@ class Ship
     {
         return $this->weaponPower;
     }
+    /**
+     * @param int $jediFactor
+     */
     public function getJediFactor()
     {
         return $this->jediFactor;
@@ -81,4 +84,17 @@ class Ship
     {
         $this->jediFactor = $jediFactor;
     }    
+    public function usedJediPowers($usedJediPowers)
+    {
+        $this->usedJediPower = $usedJediPowers;
+    }    
+    public function winningShip($winningShip)
+    {
+        $this->winningShip = $winningShip;
+    }    
+    public function losingShip($losingShip)
+    {
+        $this->losingShip = $losingShip;
+    }    
+
 }

@@ -76,10 +76,16 @@ class Ship
     {
         $this->name = $name;
     }
+    /**
+     * @param int $weaponPower
+     */
     public function setWeaponPower($weaponPower)
     {
        $this->weaponPower = $weaponPower;
     }
+    /**
+     * @param int $jediFactor
+     */
     public function setJediFactor($jediFactor)
     {
         $this->jediFactor = $jediFactor;

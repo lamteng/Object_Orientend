@@ -24,3 +24,4 @@ Pull up the new site by going to:
 
     http://localhost:8000
 
+course-oo-ep2.pdf, p21
